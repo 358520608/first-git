@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>时光网</title>
+	<link rel="stylesheet" href="times.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<script src="times.js"></script>
+</head>
+<body>
+ <!-- 导航条 -->
+	<div class="head">
+	    <div class="header">
+			<ul class="head_list">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">购票</a></li>
+				<li><a href="#">正版商城</a></li>
+				<li><a href="#">新闻</a></li>
+				<li><a href="#">直播</a><i class="iconfont icon-new"></i></li>
+				<li><a class="this_link" href="#">发现<i class="iconfont icon-triangle"></i></a></li>
+				<li><a href="#">社区</a></li>
+				<li><a href="#">会员</a></li>
+			</ul>
+			<div class="logo"><a href="#"></a></div>
+			<div class="shop_car">
+			     <a href="#"><i class="iconfont icon-gouwuchekong"></i></a>
+			     <div class="shops">
+			     	<p>您的购物车还是空的，赶快选购哦。</p>
+			     </div>
+			</div>
+			<div class="log">
+			    <a href="#">登录</a>
+			    <span></span>
+                <a href="#">注册</a>
+            </div>
+            <div class="dowload">
+			    	<i class="iconfont icon-shouji"></i>
+			    	<span>APP下载</span>
+			    	<i class="iconfont icon-22xiangxia"></i>
+			    	<i class="iconfont icon-triangle"></i>
+			    	<div class="code">
+			    	    <a href="#"><img src="images/code.jpg" alt=""></a>
+			    	</div>
+			</div>
+		    <div class="search">
+		          <a id="cic" href="javaScript:;"><i class="iconfont icon-search ccc"></i></a>
+		    </div>
+		    <div class="searc" style="display: none;">
+			    <div class="sea">
+			        <span></span>
+			        <div class="all">
+			            <div id="chose">全部<i class="iconfont icon-22xiangxia"></i></div>
+			        	<ul class="kind">
+			        		<li>全部</li>
+			        		<li>电影</li>
+			        		<li>影人</li>
+			        		<li>影院</li>
+			        		<li>商品</li>
+			        		<li>新闻</li>
+			        	</ul>
+			        </div>
+			    	<input id="play_in" type="text" placeholder="搜索电影、影人、影院、商品">
+			    	<button class="clic">
+			    		<i></i>
+			    	</button>
+			    </div>
+			</div> 
+		</div>	
+	</div>
+	<!-- 轮播图 -->
+	<div class="runImg">
+	    <!-- 背景图片 -->
+	    <ul class="imgs">
+	    	<li id="img1" class="on_this"></li>
+	    	<li id="img2"></li>
+	    	<li id="img3"></li>
+	    	<li id="img4"></li>
+	    </ul>
+	    <!-- 左右键 -->
+	    <span class="arr left"></span>
+		<span class="arr right"></span>
+		<div class="shadowbox"></div>
+		<!-- 白点 -->
+		<ul class="point">
+			<li class="on"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<!-- 轮播主要内容 -->
+		<div class="play_img">
+			<div class="cont" id="active">
+				<a class="movie_link" href="#">
+					<span class="play"></span>
+					<div class="font_con">
+						<h2>《请以你的名字呼唤我》预告</h2>
+						<p class="font1">上映日期：2017年11月24日(美国)</p>
+						<p>导演：卢卡·瓜达格尼诺</p>
+						<p>主演：提莫西·查拉梅 艾米·汉莫</p>
+						<p class="font2">影片讲述了17岁男孩和父亲的房客间的暧昧故事，记录了一个年轻男子学会怎样拥抱他更感性的一面。</p>
+						<p class="font3"><span></span>查看详情</p>
+					</div>	
+				</a>
+			</div>
+			<div class="cont">
+				<a class="movie_link" href="#">
+					<span class="play"></span>
+					<div class="font_con">
+						<h2>《正义联盟》中文预告</h2>
+						<p class="font1">上映日期：2017年11月24日(美国)</p>
+						<p>导演：卢卡·瓜达格尼诺</p>
+						<p>主演：提莫西·查拉梅 艾米·汉莫</p>
+						<p class="font2">影片讲述了17岁男孩和父亲的房客间的暧昧故事，记录了一个年轻男子学会怎样拥抱他更感性的一面。</p>
+						<p class="font3"><span></span>查看详情</p>
+					</div>	
+				</a>
+			</div>
+			<div class="cont">
+				<a class="movie_link" href="#">
+					<span class="play"></span>
+					<div class="font_con">
+						<h2>《雷神3》中文预告</h2>
+						<p class="font1">上映日期：2017年11月3日(美国)</p>
+						<p>导演：塔伊加·维迪提</p>
+						<p>主演：克里斯·海姆斯沃斯 汤姆·希德勒斯顿</p>
+						<p class="font2">雷神联手洛基绿巨人女武神，对决死神海拉。在预告片结尾，还出现了绿巨人大战火焰巨人苏尔特尔的浩大场面。</p>
+						<p class="font3"><span></span>查看详情</p>
+					</div>	
+				</a>
+			</div>
+			<div class="cont">
+				<a class="movie_link" href="#">
+					<span class="play"></span>
+					<div class="font_con">
+						<h2>《王牌特工：黄金圈》中文预告</h2>
+						<p class="font1">上映日期：2017年9月22日(美国)</p>
+						<p>导演：马修·沃恩</p>
+						<p>主演：科林·费斯 塔伦·埃格顿</p>
+						<p class="font2">故事紧接第一部，“脸叔”科林·费斯和“蛋蛋”塔伦·艾格顿再次同框并肩作战，各种黑科技加火爆动作戏火爆上演。</p>
+						<p class="font3"><span></span>查看详情</p>
+					</div>	
+				</a>
+			</div>
+		</div>
+	</div>	
+	<!-- 内容区 -->
+	<div class="content">
+		<div class="content1">
+		  <!-- 第一层 -->
+			<div class="movies">
+				<h3 class="news cli">全球新片</h3>
+				<span></span>
+				<h3 class="news">典藏佳片</h3>
+				<div class="search_mov">
+					<a href="#">电影查询<i class="iconfont icon-22xiangxia"></i></a>
+					<div class="list">
+						<h4>类型</h4>
+						<ul>
+							<li><a href="#">喜剧</a></li>
+							<li><a href="#">动作</a></li>
+							<li><a href="#">爱情</a></li>
+							<li><a href="#">惊束</a></li>
+							<li><a href="#">恐怖</a></li>
+							<li><a href="#">冒险</a></li>
+							<li><a href="#">动画</a></li>
+							<li><a href="#">科幻</a></li>
+							<li><a href="#">更多>></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+            <!-- 内容 -->
+            <div class="box_x" id="box">
+                <div class="arrow a_left"><i class="iconfont icon-zuoyou-copy"></i></div>
+	            <div class="arrow a_right"><i class="iconfont icon-zuoyou"></i></div>
+                <div class="box box1">
+                   <!-- 1 -->
+                    <div class="all_mov act" style="display: block; transform: translateX(0px);">
+						<div class="con_left">
+							<a href="#">
+								<img src="http://img5.mtime.cn/mg/2017/08/04/163506.20536612.jpg" alt="">
+							</a>
+							
+							<div class="left_con1">
+							    <a class="s_img" href="#">
+								    <span></span>
+									<img src="http://img5.mtime.cn/mt/2017/06/08/104901.80326192_100X150X4.jpg" alt="">
+								</a>
+							    <a class="name" href="#">目击者之追凶(2017)</a>
+							    <span class="poin">6.8</span>
+							    <p><span></span>所有的美好下面都藏着丑恶的嘴脸</p>
+							</div>
+						</div>
+						<!-- 右边 -->
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/08/03/151801.84730325.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">之后(2017)</a>
+								<p class="hidden">“ 三个女人一台戏，男人如何斡旋其中</p>
+							</div>
+						</div>
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/08/02/173207.73358655.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">小气鬼(2016)</a>
+								<p class="hidden">“ 当吝啬老爸撞上倒霉催女儿</p>
+							</div>
+						</div>
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/08/01/162049.93491915.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">修复生命(2016)</a>
+								<p class="hidden">“ 一颗心脏连接两段人生</p>
+							</div>
+						</div>
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/07/31/182210.62607695.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">希望的另一面(2017)</a>
+								<p class="hidden">“ 充满温情与幽默感的难民题材新表达</p>
+							</div>
+						</div>
+						<!-- 2 -->
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/08/03/151801.84730325.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">之后(2017)</a>
+								<p class="hidden">“ 三个女人一台戏，男人如何斡旋其中</p>
+							</div>
+						</div>
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/08/02/173207.73358655.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">小气鬼(2016)</a>
+								<p class="hidden">“ 当吝啬老爸撞上倒霉催女儿</p>
+							</div>
+						</div>
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/08/01/162049.93491915.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">修复生命(2016)</a>
+								<p class="hidden">“ 一颗心脏连接两段人生</p>
+							</div>
+						</div>
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/07/31/182210.62607695.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">希望的另一面(2017)</a>
+								<p class="hidden">“ 充满温情与幽默感的难民题材新表达</p>
+							</div>
+						</div>
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/08/03/151801.84730325.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">之后(2017)</a>
+								<p class="hidden">“ 三个女人一台戏，男人如何斡旋其中</p>
+							</div>
+						</div>
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/08/02/173207.73358655.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">小气鬼(2016)</a>
+								<p class="hidden">“ 当吝啬老爸撞上倒霉催女儿</p>
+							</div>
+						</div>
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/08/01/162049.93491915.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">修复生命(2016)</a>
+								<p class="hidden">“ 一颗心脏连接两段人生</p>
+							</div>
+						</div>
+						<div class="movie_list">
+							<a href="#">
+							    <img src="http://img5.mtime.cn/mg/2017/07/31/182210.62607695.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">希望的另一面(2017)</a>
+								<p class="hidden">“ 充满温情与幽默感的难民题材新表达</p>
+							</div>
+						</div>
+					</div>
+					<!-- 2 -->
+					<div class="all_mov" style="transform: translateX(0px);">
+						<div class="con_left">
+							<a href="#">
+								<img src="http://img5.mtime.cn/mg/2017/08/04/092301.84399619.jpg" alt="">
+							</a>
+							
+							<div class="left_con1">
+							    <a class="s_img" href="#">
+								    <span></span>
+									<img src="http://img31.mtime.cn/mt/2014/02/22/230534.51647008_100X150X4.jpg" alt="">
+								</a>
+							    <a class="name" href="#">性、谎言和录像带(1989)</a>
+							    <span class="poin">7.8</span>
+							    <p><span></span>索德伯格一鸣惊人的处女作</p>
+							</div>
+						</div>
+						<!-- 右边 -->
+						<div class="movie_list movie_list2">
+							<span class="movie_showday"><i>8月</i>3</span>
+							<a href="#">
+							    <img src="http://img31.mtime.cn/mt/2014/07/30/194640.75613859_223X334X4.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">饮食男女(1994)</a>
+								<p class="hidden">“ 有美食有颜值有深蕴</p>
+							</div>
+						</div>
+						<div class="movie_list movie_list2">
+							<span class="movie_showday"><i>8月</i>2</span>
+							<a href="#">
+							    <img src="http://img31.mtime.cn/mt/2014/07/31/183635.41264333_223X334X4.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">饮食男女(1994)</a>
+								<p class="hidden">“ 有美食有颜值有深蕴</p>
+							</div>
+						</div>
+						<div class="movie_list movie_list2">
+							<span class="movie_showday"><i>8月</i>3</span>
+							<a href="#">
+							    <img src="http://img31.mtime.cn/mt/2014/02/22/231802.13390372_223X334X4.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">饮食男女(1994)</a>
+								<p class="hidden">“ 有美食有颜值有深蕴</p>
+							</div>
+						</div>
+						<div class="movie_list movie_list2">
+							<span class="movie_showday"><i>8月</i>3</span>
+							<a href="#">
+							    <img src="http://img31.mtime.cn/mt/2014/02/22/232105.71634818_223X334X4.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">饮食男女(1994)</a>
+								<p class="hidden">“ 有美食有颜值有深蕴</p>
+							</div>
+						</div>
+						<div class="movie_list movie_list2">
+							<span class="movie_showday"><i>8月</i>3</span>
+							<a href="#">
+							    <img src="http://img31.mtime.cn/mt/2014/02/22/232105.71634818_223X334X4.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">饮食男女(1994)</a>
+								<p class="hidden">“ 有美食有颜值有深蕴</p>
+							</div>
+						</div>
+						<div class="movie_list movie_list2">
+							<span class="movie_showday"><i>8月</i>3</span>
+							<a href="#">
+							    <img src="http://img31.mtime.cn/mt/2014/07/30/194640.75613859_223X334X4.jpg" alt="">
+							</a>
+							<div class="hid">
+								<a href="#">饮食男女(1994)</a>
+								<p class="hidden">“ 有美食有颜值有深蕴</p>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            <!-- 热播剧集 -->
+            <div class="movies2">
+				<h3>热播剧集</h3>
+				<div class="search_mov">
+					<a href="#">电视查询<i class="iconfont icon-22xiangxia"></i></a>
+					<div class="list">
+						<h4>类型</h4>
+						<ul>
+							<li><a href="#">喜剧</a></li>
+							<li><a href="#">动作</a></li>
+							<li><a href="#">爱情</a></li>
+							<li><a href="#">惊束</a></li>
+							<li><a href="#">恐怖</a></li>
+							<li><a href="#">冒险</a></li>
+							<li><a href="#">动画</a></li>
+							<li><a href="#">科幻</a></li>
+							<li><a href="#">更多>></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+         <!-- 内容 -->
+	         <div class="box_s" id="box_s">
+	            <div class="arrow a_left"><i class="iconfont icon-zuoyou-copy"></i></div>
+	            <div class="arrow a_right"><i class="iconfont icon-zuoyou"></i></div>
+	         	<div class="box2 box1">
+	         		<ul class="box_con" style="display: block;">
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/25/101956.79147428_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"></p>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/08/03/092439.55429228_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">黑皮记事本(2017)</a></div>
+	         			    <p class="sore"></p>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/17/152216.39880834_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">黑钱胜地(2017)</a></div>
+	         			    <p class="sore"></p>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/31/161522.30066486_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">再次相遇的世界(2017)</a></div>
+	         			    <p class="sore"></p>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/19/174821.73978314_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">河神(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span></p>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/25/105814.77787182_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/26/101457.60007571_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/21/112533.60235304_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"></p>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/25/101956.79147428_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"></p>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/25/101956.79147428_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span></p>
+	         			</li>
+	         		</ul>
+	         	</div>
+	         </div>
+	         <!-- 热门电影、电视、人物 -->
+	         <div class="movies3">
+				<h3 class="hot_m ahot">热门电影</h3>
+				<span></span>
+				<h3 class="hot_m">热门电视</h3>
+				<span></span>
+				<h3 class="hot_m">热门人物</h3>
+				<div class="search_mov">
+					<a href="#">电影查询<i class="iconfont icon-22xiangxia"></i></a>
+					<div class="list">
+						<h4>类型</h4>
+						<ul>
+							<li><a href="#">喜剧</a></li>
+							<li><a href="#">动作</a></li>
+							<li><a href="#">爱情</a></li>
+							<li><a href="#">惊束</a></li>
+							<li><a href="#">恐怖</a></li>
+							<li><a href="#">冒险</a></li>
+							<li><a href="#">动画</a></li>
+							<li><a href="#">科幻</a></li>
+							<li><a href="#">更多>></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 内容区 -->
+            <div class="box_s" id="box_x">
+	            <div class="arrow a_left"><i class="iconfont icon-zuoyou-copy"></i></div>
+	            <div class="arrow a_right"><i class="iconfont icon-zuoyou"></i></div>
+	         	<div class="box2 box1">
+	         		<ul class="box_con box_con2 fir" style="transform: translateX(0px); display: block;">
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/21/162643.51070350_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">战狼2(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.5</span></p>
+	         			    <span class="ranking">1</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/24/174556.47487144_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">建军大业(2017)</a></div>
+	         			    <p class="sore"><span class="sore2">2487人想看</span></p>
+	         			    <span class="ranking">2</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/11/183729.97294820_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">绣春刀II修罗战场(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.7</span></p>
+	         			    <span class="ranking">3</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/21/113212.24416368_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">三生三世十里桃花(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">5.4</span></p>
+	         			    <span class="ranking ranking2">4</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/21/103128.77461155_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">杀破狼·贪狼(2017)</a></div>
+	         			    <p class="sore"><span class="sore2">1847人想看</span></p>
+	         			    <span class="ranking ranking2">5</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/25/142213.14606004_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">6</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/13/103549.65637900_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">7</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/27/101442.70745788_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">8</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/25/101956.79147428_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">9</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/25/101956.79147428_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">10</span>
+	         			</li>
+	         		</ul>
+	         		<ul class="box_con box_con2" style="transform: translateX(0px);">
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/05/24/101512.78997271_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">权力的游戏(2011)</a></div>
+	         			    <p class="sore"><span class="sore1">9.1</span></p>
+	         			    <span class="ranking">1</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/21/112533.60235304_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">鬼吹灯之黄皮子坟(2017)</a></div>
+	         			    <p class="sore"><span class="sore2">2487人想看</span></p>
+	         			    <span class="ranking">2</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/25/105814.77787182_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">春风十里不如你(2017)</a></div>
+	         			    <p class="sore"><span class="sore2">31人想看</span></p>
+	         			    <span class="ranking">3</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/03/105828.56926464_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">我的前半生(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.3</span></p>
+	         			    <span class="ranking ranking2">4</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img31.mtime.cn/mt/2015/06/15/103402.66168006_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">极限挑战(2015)</a></div>
+	         			    <p class="sore"><span class="sore1">8.7</span></p>
+	         			    <span class="ranking ranking2">5</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img31.mtime.cn/mt/2016/09/02/095448.18210810_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">6</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img31.mtime.cn/mt/1397/231397/231397_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">7</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/06/19/154259.83085841_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">8</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/06/27/095109.78195165_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">9</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/25/101956.79147428_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">10</span>
+	         			</li>
+	         		</ul>
+	         		<ul class="box_con box_con2" style="transform: translateX(0px);">
+	         			<li>
+	         			    <a href="#"><img src="http://img31.mtime.cn/ph/2014/06/10/093108.15071862_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">马克·沃尔伯格</a></div>
+	         			    <p class="sore"><span class="sore3"><i></i>85%</span></p>
+	         			    <span class="ranking">1</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img31.mtime.cn/ph/2014/03/14/205102.29425537_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">丹尼尔·戴-刘易斯</a></div>
+	         			    <p class="sore"><span class="sore3"><i></i>93%</span></p>
+	         			    <span class="ranking">2</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/ph/2017/06/05/160721.33243856_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">盖尔·加朵</a></div>
+	         			    <p class="sore"><span class="sore3"><i></i>85%</span></p>
+	         			    <span class="ranking">3</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/ph/2017/02/06/144615.92450623_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">劳拉·哈德克</a></div>
+	         			    <p class="sore"><span class="sore3"><i></i>76%</span></p>
+	         			    <span class="ranking ranking2">4</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img31.mtime.cn/ph/2014/03/21/093452.72436604_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">约翰·古德曼</a></div>
+	         			    <p class="sore"><span class="sore3"><i></i>83%</span></p>
+	         			    <span class="ranking ranking2">5</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img31.mtime.cn/ph/2014/11/05/090944.19404745_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">6</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img31.mtime.cn/ph/2014/03/28/162605.15111665_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">7</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/ph/2016/10/14/151916.36136584_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">8</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/25/101956.79147428_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">9</span>
+	         			</li>
+	         			<li>
+	         			    <a href="#"><img src="http://img5.mtime.cn/mt/2017/07/25/101956.79147428_175X262X4.jpg" alt=""></a>
+	         			    <div class="hot"><a href="#">深海利剑(2017)</a></div>
+	         			    <p class="sore"><span class="sore1">7.8</span><span class="sore2"></span><span class="sore3"><i></i>87%</span></p>
+	         			    <span class="ranking ranking2">10</span>
+	         			</li>
+	         		</ul>
+	         	</div>
+	         </div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="foot">
+	    <div class="line"></div>
+		<div class="bottom">
+		    <div class="concant">
+				<div class="list1">
+					<a href="#"></a>
+					<ul class="join">
+						<li><a href="#">加入我们</a></li>
+						<li><a href="#">站务论坛</a></li>
+						<li><a href="#">社区准则</a></li>
+						<li><a href="#">隐私政策</a></li>
+					</ul>
+					<ul class="join">
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">问题反馈</a></li>
+						<li><a href="#">网站地图</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+				</div>
+				<span class="line_gry"></span>
+				<div class="list2">
+					<p> 
+					    <span class="siz1">栏目</span>
+					    <span class="siz2">推荐</span>
+					    <span class="siz3">关注我们</span>
+					</p>
+					<ul>
+						<li><a href="#">新闻</a></li>
+						<li><a href="#">影院</a></li>
+						<li><a href="#">商城</a></li>
+						<li><a href="#">社区</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">观影指南</a></li>
+						<li><a href="#">时光对话</a></li>
+						<li><a href="#">特色榜单</a></li>
+						<li><a href="#">全球拾趣</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">电影票房</a></li>
+						<li><a href="#">新片预告</a></li>
+						<li><a href="#">电影猜猜猜</a></li>
+						<li><a href="#">卡片大富翁</a></li>
+					</ul>
+					<ul>
+						<li><a class="link_img link_img1" href="#"></a></li>
+						<li><a class="link_img link_img2" href="#"></a></li>
+						<li><a class="link_img link_img3" href="#"></a></li>
+					</ul>
+				</div>
+				<span class="line_gry"></span>
+				<div class="paper">
+					<h3>时光周刊</h3>
+					<span>第201期</span>
+					<a href="#">
+						<img src="http://img5.mtime.cn/mg/2017/07/28/172207.37663014.jpg" alt="">
+					</a>
+					<div class="email">
+						<input id="inp" type="text" placeholder="邮箱地址">
+						<button>订阅</button>
+					</div>
+				</div>
+				<div class="codetwo">
+					<h3>手机购票</h3>
+					<span>实惠</span>
+					<span>方便</span>
+					<a href="#"></a>
+					<p>扫描二维码 下载客户端</p>
+				</div>
+			</div>	
+			<div class="bottom_link">
+				<p>北京动艺时光网络科技有限公司Copyright 2006-2017 Mtime.com Inc. All rights reserved.</p>
+				<p><a href="#">京ICP证050715号</a>&nbsp<a href="#">网络视听许可证0108265号</a>&nbsp<a href="#">网络文化经营许可证</a>&nbsp<a href="#">广播电视节目制作经营许可证(京)字第1435号</a>&nbsp京公网安备：110105000744号</p>
+				<a class="net1" href="#"></a><a class="net2" href="#"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
